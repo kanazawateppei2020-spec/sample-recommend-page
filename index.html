@@ -1,59 +1,115 @@
 <!DOCTYPE html>
-  <html lang="ja">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>おすすめアイテム(テスト)</title>
-  <style>
-  .lp-premium-section:empty{display:none;}
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>おすすめアイテム(サンプル)｜おすすめLPビルダー 自動更新デモ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#EFEAE0;
+--ink:#16213A;
+--accent:#C9972E;
+--accent-deep:#9C7620;
+--line:#D8D0BF;
+--muted:#6B6558;
+--panel:#FFFFFF;
+}
+*{box-sizing:border-box;}
+body{
+margin:0;
+background:var(--paper);
+color:var(--ink);
+font-family:"Zen Kaku Gothic New",sans-serif;
+-webkit-font-smoothing:antialiased;
+}
+h1,h2,.disp{font-family:"Zen Old Mincho",serif;}
+.lp-inner{max-width:900px;margin:0 auto;padding:56px 24px 80px;}
+.lp-disclosure{max-width:900px;margin:0 auto;padding:10px 24px 0;font-size:11px;color:var(--muted);letter-spacing:.02em;}
+.lp-hero{text-align:center;margin-bottom:48px;}
+.lp-hero .eyebrow{font-size:11px;letter-spacing:.22em;color:var(--accent-deep);font-weight:700;text-transform:uppercase;}
+.lp-hero h2{font-size:clamp(22px,3.4vw,32px);margin:10px 0 12px;}
+.lp-hero p{color:var(--muted);font-size:14px;max-width:480px;margin:0 auto;line-height:1.8;}
+.demo-badge{display:inline-block;margin-top:18px;padding:8px 18px;background:var(--accent);color:#fff;font-size:12px;letter-spacing:.05em;}
+.lp-premium-section{margin-top:56px;padding-top:36px;border-top:1px solid var(--line);}
+.lp-premium-section:empty{display:none;}
+.lp-premium-section .section-tag{font-size:11px;letter-spacing:.14em;color:var(--accent-deep);text-transform:uppercase;margin-bottom:8px;}
+.lp-premium-section h3{font-family:"Zen Old Mincho",serif;font-size:19px;margin:0 0 18px;}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
+.rec-card{background:var(--panel);border:1px solid var(--line);overflow:hidden;transition:box-shadow .15s;}
+.rec-card:hover{box-shadow:0 10px 26px rgba(22,33,58,.10);}
+.rec-card a{color:inherit;text-decoration:none;}
+.rec-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#E7E2D4;}
+.rec-card-body{padding:14px 14px 16px;}
+.rec-card-copy{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 10px;min-height:34px;}
+.rec-cta{display:block;text-align:center;padding:9px;background:var(--ink);color:#fff;font-size:12.5px;text-decoration:none;letter-spacing:.03em;}
+.update-note{max-width:900px;margin:32px auto 0;padding:16px 20px;background:var(--panel);border:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.8;}
+.update-note strong{color:var(--ink);}
+.lp-footer-disclosure{max-width:900px;margin:40px auto 0;padding:16px 24px 0;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.8;}
 </style>
-  </head>
-  <body>
-  <div class="lp-inner">
-  <!-- GENERATED_CONTENT_START -->
-  <h2>テスト用ページ(rakuten_multi_tenant_update.py 書き込みテスト用)</h2>
-  <!-- GENERATED_CONTENT_END -->
-  <div class="lp-premium-section">
-  <!-- PREMIUM_PICKS_START -->
-  <!-- PREMIUM_PICKS_END -->
-  </div>
-  <div class="lp-premium-section">
-  <!-- RAKUTEN_ITEMS_START -->
-    <div class="rec-card fade">
-      <a href="https://hb.afl.rakuten.co.jp/hgc/g00uq01n.vnnmb4d9.g00uq01n.vnnmcc48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkkonlinestore%2Fcafe07%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkkonlinestore%2Fi%2F10000001%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kkonlinestore/cabinet/upload/12930034/567-3999.jpg?_ex=400x400" alt="＼最安値挑戦★2kgで3,999円／コーヒー 珈琲 コーヒー豆 コーヒー粉 豆のまま 1kg 2kg">
-      </a>
-      <div class="rec-card-body">
-        <p class="rec-card-copy">香り高く甘さとコクのバランスが良く、ほろ苦さが心地よいリッチブレンドです。</p>
-        <p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥1,480</p>
-        <a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00uq01n.vnnmb4d9.g00uq01n.vnnmcc48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkkonlinestore%2Fcafe07%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkkonlinestore%2Fi%2F10000001%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
-      </div>
-    </div>
+</head>
+<body>
+<div class="lp-disclosure">本ページはアフィリエイト広告を利用しています。</div>
+<div class="lp-inner">
+<!-- GENERATED_CONTENT_START -->
+<div class="lp-hero">
+<div class="eyebrow">Live Demo</div>
+<h2>おすすめLPビルダー、有料プランの実物サンプル</h2>
+<p>下の商品カードは、実際に楽天API連携の自動更新プログラムが生成し、GitHubへ自動コミットしたものです。紹介文・価格・リンクの反映まで人の手を介さず自動処理しています。無料版の使い方はnote記事をご覧ください。</p>
+<span class="demo-badge">このページは自動更新デモ用サンプルです</span>
+</div>
+<!-- GENERATED_CONTENT_END -->
+<div class="lp-premium-section">
+<!-- PREMIUM_PICKS_START -->
+<!-- PREMIUM_PICKS_END -->
+</div>
+<div class="lp-premium-section">
+<div class="section-tag">Auto Updated</div>
+<h3>自動更新ピックアップ(楽天API連携)</h3>
+<div class="rec-grid">
+<!-- RAKUTEN_ITEMS_START -->
+<div class="rec-card fade">
+<a href="https://hb.afl.rakuten.co.jp/hgc/g00uq01n.vnnmb4d9.g00uq01n.vnnmcc48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkkonlinestore%2Fcafe07%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkkonlinestore%2Fi%2F10000001%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
+<img src="https://thumbnail.image.rakuten.co.jp/@0_mall/kkonlinestore/cabinet/upload/12930034/567-3999.jpg?_ex=400x400" alt="＼最安値挑戦★2kgで3,999円／コーヒー 珈琲 コーヒー豆 コーヒー粉 豆のまま 1kg 2kg">
+</a>
+<div class="rec-card-body">
+<p class="rec-card-copy">香り高く甘さとコクのバランスが良く、ほろ苦さが心地よいリッチブレンドです。</p>
+<p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥1,480</p>
+<a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00uq01n.vnnmb4d9.g00uq01n.vnnmcc48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkkonlinestore%2Fcafe07%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkkonlinestore%2Fi%2F10000001%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
+</div>
+</div>
 
-    <div class="rec-card fade">
-      <a href="https://hb.afl.rakuten.co.jp/hgc/g00tbhon.vnnmbf58.g00tbhon.vnnmcfe9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdripcoffee%2Fhouse-500-4%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fdripcoffee%2Fi%2F10000572%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dripcoffee/cabinet/it01/4571621611730_a.jpg?_ex=400x400" alt="2kg最安値に挑戦!2kgで3,980円！コーヒー豆 コーヒー 豆 粉 2kg / 1kg ハウスブ">
-      </a>
-      <div class="rec-card-body">
-        <p class="rec-card-copy">楽天ショップ・オブ・ザ・イヤー受賞、2kgで3,980円の大容量コーヒー豆はコスパ最強です。</p>
-        <p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥2,530</p>
-        <a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00tbhon.vnnmbf58.g00tbhon.vnnmcfe9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdripcoffee%2Fhouse-500-4%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fdripcoffee%2Fi%2F10000572%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
-      </div>
-    </div>
+<div class="rec-card fade">
+<a href="https://hb.afl.rakuten.co.jp/hgc/g00tbhon.vnnmbf58.g00tbhon.vnnmcfe9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdripcoffee%2Fhouse-500-4%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fdripcoffee%2Fi%2F10000572%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
+<img src="https://thumbnail.image.rakuten.co.jp/@0_mall/dripcoffee/cabinet/it01/4571621611730_a.jpg?_ex=400x400" alt="2kg最安値に挑戦!2kgで3,980円！コーヒー豆 コーヒー 豆 粉 2kg / 1kg ハウスブ">
+</a>
+<div class="rec-card-body">
+<p class="rec-card-copy">楽天ショップ・オブ・ザ・イヤー受賞、2kgで3,980円の大容量コーヒー豆はコスパ最強です。</p>
+<p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥2,530</p>
+<a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00tbhon.vnnmbf58.g00tbhon.vnnmcfe9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdripcoffee%2Fhouse-500-4%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fdripcoffee%2Fi%2F10000572%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
+</div>
+</div>
 
-    <div class="rec-card fade">
-      <a href="https://hb.afl.rakuten.co.jp/hgc/g00pl5fn.vnnmbde5.g00pl5fn.vnnmcf1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgourmetcoffee%2F2619%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fgourmetcoffee%2Fi%2F10001806%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
-        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gourmetcoffee/cabinet/2600/2619r.jpg?_ex=400x400" alt="送料無料 コーヒー豆 コーヒー 2kg 怒涛の珈琲豆　粉 (G500×4) 加藤珈琲/グルメコーヒー">
-      </a>
-      <div class="rec-card-body">
-        <p class="rec-card-copy">マイルドで飲みやすいアラビカ100%、加藤珈琲の2kg送料無料はコスパ最高です。</p>
-        <p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥5,398</p>
-        <a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00pl5fn.vnnmbde5.g00pl5fn.vnnmcf1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgourmetcoffee%2F2619%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fgourmetcoffee%2Fi%2F10001806%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
-      </div>
-    </div>
-    <!-- RAKUTEN_ITEMS_END -->
-  </div>
-  </div>
-  </body>
-  </html>
-  
+<div class="rec-card fade">
+<a href="https://hb.afl.rakuten.co.jp/hgc/g00pl5fn.vnnmbde5.g00pl5fn.vnnmcf1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgourmetcoffee%2F2619%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fgourmetcoffee%2Fi%2F10001806%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">
+<img src="https://thumbnail.image.rakuten.co.jp/@0_mall/gourmetcoffee/cabinet/2600/2619r.jpg?_ex=400x400" alt="送料無料 コーヒー豆 コーヒー 2kg 怒涛の珈琲豆 粉 (G500×4) 加藤珈琲/グルメコーヒー">
+</a>
+<div class="rec-card-body">
+<p class="rec-card-copy">マイルドで飲みやすいアラビカ100%、加藤珈琲の2kg送料無料はコスパ最高です。</p>
+<p style="font-size:.72rem;color:var(--muted);margin-bottom:.6rem;">¥5,398</p>
+<a class="rec-cta" href="https://hb.afl.rakuten.co.jp/hgc/g00pl5fn.vnnmbde5.g00pl5fn.vnnmcf1d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgourmetcoffee%2F2619%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fgourmetcoffee%2Fi%2F10001806%2F&amp;rafcid=wsc_i_is_e6502f31-9271-4652-950c-74fa10d64f16" target="_blank" rel="nofollow sponsored noopener">詳細を見る →</a>
+</div>
+</div>
+<!-- RAKUTEN_ITEMS_END -->
+</div>
+</div>
+<div class="update-note">
+<strong>このページについて:</strong> ここに表示されている商品は、楽天市場APIで自動選定し、AIが紹介文を生成、GitHub上のこのファイルへ自動コミットしたものです(有料プランで提供している自動更新のしくみそのものを、サンプルとして公開しています)。実際の更新頻度・商品数はプランによって異なります。
+</div>
+<div class="lp-footer-disclosure">
+本ページで紹介している商品リンクには、アフィリエイトプログラム（成果報酬型広告）によるリンクが含まれています。リンク先での購入等により、当サイト運営者が紹介料を受け取る場合があります。商品の価格・在庫状況等は変動することがありますので、詳細は各リンク先のページでご確認ください。
+</div>
+</div>
+</body>
+</html>
